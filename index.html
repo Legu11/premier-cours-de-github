@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+    <section class="home">
+
+        <header class="menu">
+            <nav class="link">
+                <img width="60" src="/images/airsupdev.png" alt="Logo">
+                <div class="le-reste"></div>
+                <li><a href="#enregistrer">Enregistrez-vous</a></li>
+                <li><a href="#voyage">Nos voyages du moment</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#apropos">A propos de nous</a></li>
+
+
+
+                <div class="profile-container">
+                    <button class="profile-btn" onclick="toggleMenu()">👤 Profil</button>
+                    <div class="dropdown-menu" id="dropdownMenu">
+                        <a href="connexion.html">Se connecter</a>
+                        <a href="inscription.html">S'inscrire</a>
+                    </div>
+                </div>
+
+
+
+                </div>
+
+
+            </nav>
+
+        </header>
+        <div class="page d'accueil">
+            <h1 class="gros-titre">Volez plus haut, explorez le monde avec nous !</h1>
+
+        </div>
+
+        <form id="#enregistrer" class="search-container">
+            <h2><strong>Enregistrez vous</strong></h2>
+            <input type="text" placeholder="Saisissez votre destination (pays, région, ville)" required>
+
+            <select required>
+                <option value="" disabled selected>Ville de départ</option>
+                <option value="Paris">Paris</option>
+                <option value="Marseille">Marseille</option>
+                <option value="Lyon">Lyon</option>
+                <option value="Bordeau">Bordeau</option>
+            </select>
+
+            <select required>
+                <option value="" disabled selected>Durée</option>
+                <option value="3j">3 jours</option>
+                <option value="7j">7 jours</option>
+                <option value="14j">14 jours</option>
+            </select>
+
+            <input type="date" required>
+
+
+
+            <button type="submit" class="search-btn">Rechercher</button>
+        </form>
+
+    </section>
+
+
+
+
+
+
+    <section id="#voyage">
+        <h1 class="titre">Nos voyages du moment</h1>
+
+        <article class="boite_voyage">
+
+            <div class="voyage-card">
+                <img src="/images/tunis.jpg" alt="Tunis">
+                <div class="voyage-info">
+                    <h2 class="voyage-name">Tunis</h2>
+                    <p class="voyage-price"><strong>157€/nuit </strong></p>
+                    <p class="voyage-prime">✅ Prix Prime par personne</p>
+                </div>
+            </div>
+
+
+            <div class="voyage-card">
+                <img src="/images/istanbul.jpg" alt="istanbul">
+                <div class="voyage-info">
+                    <h2 class="voyage-name">Istanbul</h2>
+                    <p class="voyage-price"><strong>170€/nuit</strong></p>
+                    <p class="voyage-prime">✅ Prix Prime par personne</p>
+                </div>
+            </div>
+
+
+
+            <div class="voyage-card">
+                <img src="/images/maldives.jpg" alt="Maldives">
+                <div class="voyage-info">
+                    <h2 class="voyage-name">Maldives</h2>
+                    <p class="voyage-price"><strong>246€/nuit</strong></p>
+                    <p class="voyage-prime">✅ Prix Prime par personne</p>
+                </div>
+            </div>
+
+
+
+            <div class="voyage-card">
+                <img src="/images/Tokyo.jpg" alt="Tokyo">
+                <div class="voyage-info">
+                    <h2 class="voyage-name">Tokyo</h2>
+                    <p class="voyage-price"><strong>210€/nuit</strong></p>
+                    <p class="voyage-prime">✅ Prix Prime par personne</p>
+                </div>
+            </div>
+
+        </article>
+
+    </section>
+
+
+
+
+    <main>
+        <section class="image_fond_circuit">
+            <h1 class="circuit_signature">Nos circuits signature </h1>
+            <h3 class="info_comp">inclus dans les circuits : </h3>
+            <h3 class="info_comp">✅ Vols et transferts
+                ✅ Hébergements 3★ à 5★
+                ✅ Guides locaux
+                ✅ Petits-déjeuners</h3>
+            <h3 class="info_comp">💡 Idéal pour : Ceux qui veulent combiner culture, nature et modernité en un seul
+                voyage !
+            </h3>
+
+            <article class="boite_circuit">
+
+                <div class="voyage-card">
+                    <img src="/images/bateau_croisiere.jpg" alt="circuit méditerranéen">
+                    <div class="voyage-info">
+                        <h2 class="voyage-name">L'Odyssée Méditerranéenne</h2>
+                        <p class="voyage-price"><strong>1235€</strong></p>
+                        <p class="voyage-prime"> Itinéraire du circuit :</p>
+                        <p class="voyage-prime"> Barcelone/Rome/Athène/Tunis </p>
+                        <p class="voyage-prime"> 15 jours </p>
+                        <p class="voyage-prime"> Repas compris </p>
+
+                    </div>
+                </div>
+
+
+                <div class="voyage-card">
+                    <img src="/images/temple_rouge.jpg" alt="circuit Merveille d'Asie">
+                    <div class="voyage-info">
+                        <h2 class="voyage-name">Merveilles d’Asie </h2>
+                        <p class="voyage-price"><strong>1850€</strong></p>
+                        <p class="voyage-prime"> Itinéraire du circuit :</p>
+                        <p class="voyage-prime"> Bangkok/Bali/Tokyo/ </p>
+                        <p class="voyage-prime"> 12 jours </p>
+                        <p class="voyage-prime"> Repas compris </p>
+
+                    </div>
+                </div>
+
+
+                <div class="voyage-card">
+                    <img src="/images/newyork5.jpg" alt="circuit méditerranéen">
+                    <div class="voyage-info">
+                        <h2 class="voyage-name">Splendeurs d’Amérique </h2>
+                        <p class="voyage-price"><strong>1500€</strong></p>
+                        <p class="voyage-prime"> Itinéraire du circuit :</p>
+                        <p class="voyage-prime"> New York/Cancún/Rio de Janeiro </p>
+                        <p class="voyage-prime"> 13 jours </p>
+                        <p class="voyage-prime"> Repas compris </p>
+
+                    </div>
+                </div>
+
+            </article>
+        </section>
+    </main>
+
+
+
+    <section id="apropos" class="p">
+        <h1 class="apro">A propos de nous</h1>
+
+        <article class="apropos">
+            <div class="info_agence">
+                <p>Fondée en 2005, Air SupDEV est bien plus qu'une simple agence de voyage. Nous sommes une équipe
+                    passionnée, dédiée à transformer vos rêves d’évasion en expériences inoubliables. Avec une expertise
+                    solide et un réseau de partenaires de confiance à travers le monde, nous vous offrons des séjours
+                    sur mesure adaptés à toutes vos envies.</p>
+            </div>
+
+
+            <div class="spe">
+                <h2 class="nos_specialite">🌍Nos spécialités</h2>
+                <p class="nos_specialite2"> Chez Air SupDEV, nous avons développé plusieurs facettes pour répondre aux
+                    attentes variées des
+                    voyageurs </p>
+
+
+                <p class="nos_specialite3">🔹 Voyages d’aventure : Randonnées, safaris, plongée et expériences en pleine
+                    nature.
+                </p>
+                <p class="nos_specialite3">🔹 Séjours tout compris : Hôtels de luxe, resorts et croisières pour un
+                    confort absolu.</p>
+                <p class="nos_specialite3">🔹 Escapades culturelles : Circuits historiques, découvertes gastronomiques
+                    et immersion locale.</p>
+                <p class="nos_specialite3">🔹 Voyages d’affaires : Organisation de séminaires, congrès et déplacements
+                    professionnels.</p>
+                <p class="nos_specialite3">🔹 Voyages sur mesure : Un itinéraire entièrement personnalisé selon vos
+                    désirs.</p>
+            </div>
+
+
+            <div class="spe">
+                <h2 class="nos_specialite">🏆 Pourquoi choisir Air SupDEV ?</h2>
+
+
+                <p class="nos_specialite3">✅ Une expertise reconnue : Plusieurs années d’expérience dans le secteur du
+                    voyage.
+                </p>
+                <p class="nos_specialite3">✅ Des offres exclusives : Profitez des meilleures promotions et des séjours
+                    uniques.</p>
+                <p class="nos_specialite3">✅ Un accompagnement personnalisé : Une équipe à votre écoute 24/7.</p>
+                <p class="nos_specialite3">✅ Un large choix de destinations : De l’Europe à l’Asie, en passant par
+                    l’Afrique et l’Amérique.</p>
+                <p class="nos_specialite3">✅ Des voyages écoresponsables : Nous privilégions des expériences
+                    respectueuses de l’environnement et des cultures locales.</p>
+            </div>
+
+        </article>
+
+    </section>
+
+
+    <footer class="pied_page">
+
+        <div id="contact" class="contact">
+            <h3>Contactez-nous</h3>
+            <p>supportairsupdev@contact.com</p>
+            <p>06 45 65 85 21</p>
+            <p>6 Avenue du Clair-Obscur ,75007</p>
+        </div>
+
+
+        <div class="reseauso">
+            <h3>Nos Réseaux-sociaux</h3>
+            <ul class="rs">
+                <li><a href="https://www.instagram.com" target="_blank"><img src="/images/insta_logo.png" alt=""
+                            width="50px"></a></li>
+                <li><a href="https://www.tiktok.com" target="_blank"><img src="/images/tiktok_logo.png" alt=""></a></li>
+                <li><a href="https://www.youtube.com" target="_blank"><img src="/images/youtube_logo.png" alt=""></a>
+                </li>
+                <li><a href="https://www.facebook.com" target="_blank"><img src="/images/facebook_logo.png" alt=""></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="horaire">
+            <h3>Les horaires</h3>
+            <p>✅ Lun 9h30-18h20</p>
+            <p>✅ Mar 9h30-18h20</p>
+            <p>✅ Mer 9h30-18h20</p>
+            <p>✅ Jeu 9h30-18h20</p>
+            <p>✅ Ven 9h30-18h20</p>
+            <p>✅ Sam 10h30-17h30</p>
+            <p>❌ Dim fermé</p>
+        </div>
+
+
+
+
+        <script>
+            function toggleMenu() {
+                document.getElementById("dropdownMenu").classList.toggle("show");
+            }
+        </script>
+
+
+</body>
+
+</html>

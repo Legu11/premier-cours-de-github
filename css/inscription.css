@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../images/fond_inscription.jpg);
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.448);
+    /* Couche sombre */
+    background-blend-mode: darken;
+    /* Mélange les couleurs */
+}
+
+section {
+    background-color: rgba(32, 32, 32, 0.803);
+    padding: 30px;
+    width: 450px;
+    border-radius: 20px;
+    color: white;
+    height: 70vh;
+    padding-left: 25px;
+    padding-top: 13px;
+    font-size: 24px;
+    backdrop-filter: blur(4px);
+    justify-content: center;
+    display: flex;
+}
+
+.inputBox {
+    background-color: rgba(255, 235, 205, 0.247);
+    margin: 10px;
+    border-radius: 20px;
+    width: 340px;
+    height: 6vh;
+}
+
+.inputBox input {
+    background: transparent;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    padding-top: 14px;
+    color: white;
+    font-size: 15px;
+}
+
+
+.inputBox2 {
+    background-color: rgba(255, 235, 205, 0.247);
+    margin: 10px;
+    border-radius: 20px;
+    width: 340px;
+    height: 6vh;
+}
+
+
+.inputBox2 input {
+    background: transparent;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    padding-top: 14px;
+    color: white;
+    font-size: 15px;
+
+}
+
+.inputBox i {
+    position: absolute;
+    padding-top: 10px;
+    padding-left: 22%;
+}
+
+.inputBox2 i {
+    position: absolute;
+    padding-top: 10px;
+    padding-left: 22%;
+}
+
+.form h2 {
+    padding-left: 95px;
+    margin-bottom: 50px;
+
+}
+
+.btn {
+
+    background: transparent;
+    border: none;
+    outline: none;
+    padding-left: 1%;
+
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    margin: 10px;
+    width: 340px;
+    height: 5vh;
+}
+
+
+
+.boite_btn {
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    margin-top: 60px;
+}
+
+.cpt {
+    font-size: 20px;
+    margin-top: 10px;
+
+}

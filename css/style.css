@@ -1,0 +1,421 @@
+* {
+    margin: auto;
+}
+
+body {
+    font-family: "Delicious Handrawn", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* tête de page */
+
+nav {
+    /* mettre les éléments en ligne */
+    display: flex;
+    justify-content: flex;
+    background-color: rgba(0, 0, 0, 0.693);
+}
+
+nav li {
+
+    margin: 16px;
+    list-style-type: none;
+    border-radius: 15px;
+}
+
+
+
+
+.profile-container {
+    position: relative;
+}
+
+.profile-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 120px;
+    text-align: center;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown-menu a:hover {
+    background: #007bff;
+    color: white;
+}
+
+.show {
+    display: block;
+}
+
+
+
+
+nav li a {
+    color: rgb(255, 255, 255);
+    padding: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 23px;
+    margin: 12px;
+    line-height: 45px;
+
+}
+
+nav li:hover a {
+    color: rgb(37, 164, 238);
+}
+
+body {
+    background-color: rgb(212, 212, 212);
+
+}
+
+section.home {
+    background-image: url(../images/fond_navigation.jpg);
+    background-size: cover;
+    height: 90vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Couche sombre */
+    background-blend-mode: darken;
+    /* Mélange les couleurs */
+}
+
+nav li:hover {
+    background-color: rgb(0, 54, 66);
+    transition: 0.4s all;
+
+
+}
+
+
+.gros-titre {
+    color: rgb(245, 222, 179);
+    font-size: 65px;
+    padding: 20px 50px;
+    margin: 50px;
+
+}
+
+.search-container {
+    background-color: rgba(255, 235, 205, 0.551);
+    height: 8vh;
+    border-radius: 20px;
+    margin: 150px;
+    margin-bottom: 40px;
+    padding-right: 7px;
+    display: flex;
+    overflow: hidden;
+
+
+}
+
+
+
+
+
+
+
+/* voyages du moment */
+
+.voyage-card {
+    width: 350px;
+    /* Taille similaire à ton exemple */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.393);
+    position: relative;
+    font-family: Arial, sans-serif;
+
+}
+
+.voyage-card:hover {
+    transition: 0.3s;
+    transform: scale(1.05);
+}
+
+.voyage-card img {
+    width: 100%;
+    height: 300px;
+    /* Ajuste la hauteur pour correspondre au design */
+    object-fit: cover;
+}
+
+.voyage-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    color: white;
+}
+
+.voyage-location {
+    font-size: 12px;
+    margin: 0;
+    opacity: 0.8;
+}
+
+.voyage-name {
+    font-size: 18px;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.voyage-price {
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.voyage-prime {
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+h1.titre {
+    display: flex;
+    background-color: rgba(245, 222, 179, 0.699);
+    ;
+    justify-content: center;
+    font-size: 40px;
+    padding: 20px;
+}
+
+article.boite_voyage {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    margin: 15px;
+    background-color: rgba(255, 255, 255, 0.392);
+    border-radius: 10px;
+}
+
+
+div.voyage-card img {
+    width: 100%;
+    height: 100%;
+    transition: scale 400ms;
+}
+
+
+div.voyage-card:hover img {
+    scale: 120%;
+}
+
+
+
+
+
+
+
+/* Les circuits */
+
+
+h1.circuit_signature {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    padding: 35px;
+    margin: 20px;
+    color: white;
+}
+
+h3.info_comp {
+    color: white;
+    justify-content: center;
+    display: flex;
+}
+
+
+
+section.image_fond_circuit {
+    background-image: url(../images/image_fond_circuit.jpg);
+    background-size: cover;
+    height: 85vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Couche sombre */
+    background-blend-mode: darken;
+    /* Mélange les couleurs */
+}
+
+article.boite_circuit {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    margin-left: 0%;
+    height: 50%;
+    font-size: 250px;
+
+
+}
+
+li.points {
+    font-size: 10px;
+}
+
+
+
+
+/* A propos de nous */
+
+
+.apropos {
+    background-image: url(../images/fond_apropos.jpg);
+    background-size: cover;
+    height: 120vh;
+    width: 97%;
+    background-color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.267);
+    /* Couche sombre */
+    background-blend-mode: darken;
+    /* Mélange les couleurs */
+    padding: 0.10px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.apn {
+    color: white;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+h1.apro {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    padding: 20px;
+}
+
+.info {
+    background-color: blueviolet;
+    width: 100%;
+    height: 300px;
+    /* Ajuste la hauteur pour correspondre au design */
+    object-fit: cover;
+}
+
+.info_agence {
+    color: white;
+    padding: 20px;
+    font-size: 22px;
+    margin: 30px;
+    background-color: rgba(0, 225, 255, 0.452);
+    border-radius: 20px;
+}
+
+.nos_specialite {
+    color: white;
+    padding-left: 95px;
+    font-size: 30px;
+
+}
+
+.nos_specialite2 {
+    color: white;
+    padding-left: 30px;
+    margin: 4px;
+
+}
+
+.nos_specialite3 {
+    color: white;
+    margin: 20px;
+    font-size: 20px;
+
+
+}
+
+.choix {
+    color: white;
+    display: flex;
+}
+
+.spe {
+    background-color: rgba(0, 0, 0, 0.488);
+    margin: 30px;
+    width: 900px;
+    border-radius: 20px;
+    overflow: hidden;
+    padding-left: 20px;
+    justify-content: center;
+
+
+}
+
+.p {
+    position: relative;
+    background-color: rgba(245, 222, 179, 0.627);
+    ;
+
+}
+
+
+
+/* pied de page */
+
+.pied_page {
+    background-color: rgb(9, 9, 9);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 20px;
+    padding: 50px
+}
+
+img {
+    width: 40px;
+}
+
+.contact {
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.079);
+    color: white;
+    padding-left: 25px;
+    border-radius: 20px;
+}
+
+.reseauso {
+    background-color: rgba(255, 255, 255, 0.079);
+    border-radius: 20px;
+    height: 200px;
+    width: 250px;
+    padding-left: 25px;
+    color: white;
+}
+
+.horaire {
+    background-color: rgba(255, 255, 255, 0.079);
+    color: white;
+    padding-left: 25px;
+    border-radius: 20px;
+}
+
+.rs {
+    list-style-type: none;
+}
